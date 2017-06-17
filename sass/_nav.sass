@@ -1,0 +1,87 @@
+/******Navigation******/    
+nav 
+    width: 100%
+    background: $black 
+    color: $white
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+    ul
+        li
+            line-height: 50px
+            text-align: center
+        
+            a
+                color: $white
+                font-size: 1em
+                font-weight: 600
+    
+        li:hover  
+            background: $darkGray
+        
+            a:hover
+                text-decoration: none 
+                color: $white
+        
+        li.active
+            background: $darkGray
+            a.active
+                color: $white
+         
+#menu-dropdown
+    margin: 0 !important
+    @media (max-width: 640px) 
+        display: none 
+ 
+#menu-dropdown.open 
+    display: block 
+     
+#dropdown
+    position: relative
+    a:hover
+        text-decoration: none
+#sub-nav 
+    display: none  
+    width: 100% 
+    position: absolute 
+    z-index: 20
+    float: none
+    padding: 0 15px
+    li
+        border: none 
+        background: $lightGray
+        float:none
+    li:hover 
+        background: $lightPink 
+        
+    @media (min-width: 768px) and (max-width:990px) 
+        overflow: hidden 
+        position: fixed 
+        top: 180px 
+        left: 0 
+        width: 100% 
+        
+        li 
+            float: left 
+            width: 20%
+    
+#mobile-nav 
+    color: $white
+    line-height: 50px 
+    
+    @media (min-width: 764px) 
+        display: none  
+     
+    @media (max-width: 765px) 
+        background: url(../images/Hamburger.png) no-repeat left 5px center 
+        font-size: 120% 
+        cursor: pointer 
+        display: block 
+        width: 100% 
+        text-decoration: none 
+        text-align: center 
+        
+      
+#mobile-nav.minus   
+    background: url(../images/X-Icon.png) no-repeat left 5px center 
+    display: block

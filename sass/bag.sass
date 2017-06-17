@@ -1,0 +1,91 @@
+$black: #000
+$white: #fff
+$lightPink: lightpink
+$lightGray: #ddd
+$darkGray: #6e7177
+
+@import 'style'
+@import 'nav'
+@import 'sidebar'
+
+
+
+#wrapper
+    padding: 15px 0
+    .aside
+        ul
+            li
+                a
+                    color: $black        
+                a:hover
+                    color: $lightPink
+                    text-decoration: none
+                a.active
+                    color: $lightPink
+    .container1 
+        clear: both
+        small
+            a
+                float: left
+                color: $black
+            a:hover
+                text-decoration: none
+                color: $lightPink
+            a.active
+                color: $lightPink 
+    #container2
+        
+        .title
+            border-bottom: 1px dashed $darkGray !important
+            padding-left: 15px
+            a
+                display: block
+                line-height: 40px
+            .confirm
+                p
+                    color: $darkGray
+                    
+        .customer
+            padding: 10px 0
+            border-top: 1px dashed $darkGray
+        .thankyou
+            border-bottom: 2px solid $black
+            padding: 10px 0
+            margin-bottom: 10px
+        .button
+            line-height: 40px
+            margin-bottom: 10px
+            margin-top: 10px
+            border: 1px solid $white
+            background: $lightPink
+            a
+                color: $white
+           
+        .item
+            padding: 10px 0
+            b
+                color: $black
+                padding-bottom: 10px
+            a
+                color: $black
+        button
+            background: $white
+            border: 1px solid $lightGray
+            a
+                color: $white
+            a:hover
+                text-decoration: none
+        input
+            border: 1px solid $darkGray
+            line-height: 30px !important
+            
+        .total
+            background: $lightGray 
+            padding-top: 10px
+            margin-bottom: 10px
+            margin-top: 10px
+        
+        .confirmed
+            color: $darkGray
+            
+            

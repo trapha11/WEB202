@@ -1,0 +1,72 @@
+$black: #000
+$white: #fff
+$lightPink: lightpink
+$lightGray: #ddd
+$darkGray: #6e7177
+
+@import 'nav'
+@import 'sidebar'
+@import 'style'
+
+#wrapper
+    padding: 15px 0
+    .aside
+        ul
+            li
+                a
+                    color: $black        
+                a:hover
+                    color: $lightPink
+                    text-decoration: none
+                a.active
+                    color: $lightPink
+    .container1 
+        clear: both
+        small
+            a
+                float: left
+                color: $black
+            a:hover
+                text-decoration: none
+                color: $lightPink
+            a.active
+                color: $lightPink  
+    #container2
+        margin-top: 15px
+        .large
+            padding-bottom: 10px
+        #addtobag
+            padding-bottom: 10px
+            border-bottom: 1px dashed $darkGray
+            margin-bottom: 10px
+            select
+                line-height: 20px
+                width: 100px
+                padding: 5px 10px 
+                margin: 0 10px 10px
+            .quantity
+                width: 50px
+            button
+                color: $black
+                line-height: 20px
+                border: 1px solid $lightGray
+                margin: 0 0 10px 10px
+                background: $white 
+                
+            .button
+                background: $lightPink
+                padding: 6px 10px
+                a
+                    text-decoration: none
+                    color: $white
+                
+            .form-control
+                display: inline !important
+                width: auto !important
+                
+                
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor
+    padding: 0 0 0 .8em !important
+        
+.ui-tabs .ui-tabs-panel        
+    padding: .8em 0 !important        

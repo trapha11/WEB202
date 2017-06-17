@@ -1,0 +1,95 @@
+$black: #000
+$white: #fff
+$lightPink: lightpink
+$lightGray: #ddd
+$darkGray: #6e7177
+
+@import 'style'
+@import 'nav'
+@import 'sidebar'
+
+#wrapper
+    padding: 15px 0
+    .aside
+        ul
+            li
+                a
+                    color: $black
+                a.active
+                    color: $lightPink
+        
+    .container1 
+        clear: both
+        small
+            a
+                float: left
+                color: $black
+            a:hover
+                text-decoration: none
+                color: $lightPink
+            a.active
+                color: $lightPink                     
+        
+    .container3
+        .box1
+            float: left
+            position: relative
+            margin: 0 auto
+
+            img  
+                left: 0 
+                top: 0 
+                z-index: -10
+
+            h3 
+                position: absolute 
+                top: 120px 
+                left: 140px 
+                z-index: 10
+                font-size: 2em 
+                font-weight: 800
+                color: $white
+            h3:hover
+                color: $black
+            .long
+                left: 60px
+            .longer
+                left: 40px
+            p 
+                position: absolute 
+                top: 150px 
+                left: 60px 
+                z-index: 10 
+                font-weight: 800
+                color: $white        
+
+        .box2
+            float: left
+            position: relative
+            margin: 0 auto
+
+            img  
+                left: 0 
+                top: 0 
+                z-index: -10    
+            h3 
+                position: absolute 
+                top: 120px 
+                left: 150px 
+                z-index: 10
+                font-size: 2em 
+                font-weight: 800
+                color: $white
+            h3:hover
+                color: $lightPink
+            .long
+                left: 60px
+            .longer
+                left: 40px
+            p 
+                position: absolute 
+                top: 150px 
+                left: 60px 
+                z-index: 10 
+                font-weight: 800
+                color: $white       

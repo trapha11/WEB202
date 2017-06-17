@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wicked Wool|INFO|WEB202</title>
+    <link rel="stylesheet" href="css/bag.css" type="text/css">
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap-theme.css" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+    <style>
+        @font-face {
+        font-family: 'fonts/Avenir LT Std';
+        src: url('fonts/AvenirLTStd-Black.eot');
+        src: url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+            url('fonts/AvenirLTStd-Black.woff') format('woff'),
+            url('fonts/AvenirLTStd-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo" class="row">
+        <a class="col-sm-3 col-sm-offset-5 col-xs-8 col-xs-offset-2" href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+        <a class="col-sm-1 col-sm-offset-2" href="login.html">Login</a>
+        <a class="col-sm-1" href="bag.html">Bag</a>    
+        </div><!--end logo-->
+    </header>
+    
+   <nav class="container-fluid">
+        <a id="mobile-nav" href="">
+            MENU
+        </a>    
+        <ul id="menu-dropdown" class="row">
+            <li class="col-sm-2 col-xs-12">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="col-sm-2 col-xs-12" >
+                <a href="about.html">ABOUT US</a>
+            </li>
+            <li id="dropdown" class="active col-sm-2 col-xs-12">
+                <a href="shop.html">SHOP  <span>▼</span></a>
+                <ul id="sub-nav">
+                    <li>
+                        <a href="shop.html">WOMEN</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">MEN</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">KIDS BABIES</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">ACCESSORIES</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-sm-2 col-xs-12">
+                <a href="opinion.html">GET STARTED</a>
+            </li>
+            <li class="col-sm-2 ol-xs-12">
+                <a href="login.html">JOIN PARTY</a>
+            </li>
+            <li class="col-sm-2 col-xs-12">
+                <a href="login.html">CONTACT US</a>
+            </li>
+        </ul>
+
+    <!--MY OWN JS-->    
+    <script src="js/dropdown.js"></script>
+    </nav>   
+    <!--end nav bar-->
+    
+    <div id="wrapper" class="row">
+        <div class="container1 col-sm-8 col-sm-offset-4">
+            <small><a href="index.html"><b>HOME> </b><br /></a><a class="active" href="shop.html"><b>SHOPPING BAG> </b><br /></a></small>
+        </div>
+        <div id="container2" class="row col-xs-12">
+            <div class="aside col-sm-2 col-sm-offset-2 col-xs-3">
+                <ul>
+                    <li id="sidebar">
+                        <a href="bag.html">1. REVIEW YOUR BAG></a>
+                    </li>
+                    <li id="sidebar">
+                        <a href="info.html">2. CHECKOUT></a>
+                    </li>
+                    <li id="sidebar">
+                        <b>3. PAYMENT INFO></b>
+                    </li>
+                    <li id="sidebar">
+                        <a href="summary.html">4. ORDER SUMMARY></a>
+                    </li>
+                    <li id="sidebar">
+                        <a href="confirmation.html">5.  CONFIRMATION></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row col-sm-6">
+                <div class="title">
+                    <h3><b>PAYMENT INFORMATION</b></h3>
+                </div>
+                <div class="item row"><!--item1 start-->
+                    <b class="col-sm-11">SHIPPING ADDRESS</b>
+                    <label class="col-sm-2 col-sm-offset-1">First*</label>
+                    <input class="col-sm-3" type="email" placeholder="first name"><br />
+                    <label class="col-sm-2">Last*</label>
+                    <input class="col-sm-3" type="email" placeholder="last name"><br />
+                </div>
+                <div class="item row">
+                    <label class="col-sm-2 col-sm-offset-1">Address 1*</label>
+                    <input class="col-sm-8" type="text" placeholder="address 1">
+                </div>    
+                <div class="item row">
+                    <label class="col-sm-2 col-sm-offset-1">Address 2*</label>
+                    <input class="col-sm-8" type="text" placeholder="address 2"><br />
+                </div>
+                <div class="item row">
+                    <label class="col-sm-2 col-sm-offset-1">City*</label>
+                    <input class="col-sm-3" type="email" placeholder="city">
+                    <label class="col-sm-2">State *</label>
+                    <input class="col-sm-3" type="email" placeholder=" WA"><br />
+                </div>
+                <div class="item row">
+                    <label class="col-sm-2 col-sm-offset-1">Zip Code*</label>
+                    <input class="col-sm-3" type="email" placeholder=" zip code">
+                    <label class="col-sm-2">Phone *</label>
+                    <input class="col-sm-3" type="email" placeholder=" phone#"><br />
+                </div>
+                <!--shipping end-->
+                <div class="item row"><!--billing start-->
+                    <b class="col-sm-12">BILLING INFORMATION</b>
+                    <label class="col-sm-2 col-sm-offset-1">Cardholder*</label>
+                    <input class="col-sm-3" type="email" placeholder="fullname"><br />
+                    <label class="col-sm-2">Type*</label>
+                    <input class="col-sm-3" type="email" placeholder="Visa/AX"><br />
+                 </div>  
+                <div class="item row">
+                    <label class="col-sm-2 col-sm-offset-1">CreditCard*</label>
+                    <input class="col-sm-8" type="text" placeholder=" 1234 1234 1234 1234"><br />
+                </div>
+                <div class="item row">
+                    <label class="col-sm-2 col-sm-offset-1">CVV*</label>
+                    <input class="col-sm-3" type="email" placeholder="CVV">
+                    <label class="col-sm-2">Exp *</label>
+                    <input class="col-sm-3" type="email" placeholder="mm/dd"><br />
+                </div>
+                <button class="button col-sm-2 col-sm-offset-9"><a href="summary.html">CONTINUE</a></button>
+                <!--item2 end-->
+                
+                <!--item3 end-->
+            </div><!--end poster-->
+        
+        </div><!--end container 2-->
+    </div><!--end wrapper-->
+</body>
+    <div id="copyright">
+        <ul class="row">
+            <li class="col-sm-4 col-xs-12"><small>Copyright 2017,&copy;</small></li>
+            <li class="col-sm-4 col-xs-12"><small>All Rights Reserved</small></li>    
+            <li class="col-sm-4 col-xs-12"><small>Web Design by Trang Pham</small></li>
+             
+        </ul>  
+    </div><!--end copyright-->   
+</html>
